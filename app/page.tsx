@@ -2,14 +2,27 @@
 export default function layout() {
 
   return (
-    <div className="hidden sm:block bg-black w-full h-1/4">
-      <div className="flex space-x-4">
-        <a href="#" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
-        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+    <><div className="bg-black w-full h-1/4 justify-center">
+      <div className="flex justify-center ">
+        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white border-solid px-8 py-3  font-medium">Trabajo</a>
+        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white border-solid px-8 py-3  font-medium">Sobre mí</a>
+        <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white border-solid px-8 py-3  font-medium">Contacto</a>
       </div>
     </div>
+    <div className="flex w-full my-48">
+      <div className="w-1/2 flex justify-center items-center">
+        <h1 className="text-white text-6xl"> Hola soy Ahazel</h1>
+      </div>
+      <div>
+        {/* Material grafico, gif o lo que sea */}
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    </>
 
   );
 
