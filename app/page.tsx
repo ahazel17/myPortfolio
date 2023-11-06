@@ -1,5 +1,6 @@
 'use client';
 import Particle from "./components/particle";
+import Wparticle from "./components/wparticle";
 export default function layout() {
   
 
@@ -20,6 +21,7 @@ export default function layout() {
       <div className="block my-48 justify-center items-center text-center" id="tsparticles">
       
       <Particle />
+      
         <div className="">
           
         <h1 className="text-6xl font-bold text-center">Yo soy <br></br> <a className="text-blue-500">Ahazel</a>, un gusto.</h1> 
@@ -37,13 +39,18 @@ export default function layout() {
       
     </div>
 
-    <div className="flex  h-1/3 text-black  px-8 py-10 font-bold  ">
-      <div className="w-1/2">
-        
-        <h1 className="text-5xl"> Revisa mis <br></br>  <a className="text-blue-500">trabajos</a>
+    <div className="flex  text-white font-semibold bg-black">
+      <div className="w-1/2 justify-center mt-10 flex">
+        {/* <Wparticle /> */}
+        <h1 className=" text-7xl"> Mira mis  <a className="text-blue-500">trabajos</a>
+        <p className=" text-2xl mt-3 font-thin ">Comprueba las tecnologías con las que he estado trabajando.</p>
         
         
         </h1>
+      </div>
+      <div className="w-1/2 ">
+        {/* <Wparticle /> */}
+      <img className=" h-4/6 justify-center m-10" src="https://productivityist.com/wp-content/uploads/testpattern.jpg"></img>        
       </div>
       
 
@@ -51,7 +58,11 @@ export default function layout() {
 
     </div>
     
-    
+    <div>
+ {/* Contact Div */}
+    <h1> hola xd</h1>
+
+    </div>
     
     
     </>

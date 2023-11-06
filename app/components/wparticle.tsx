@@ -4,7 +4,7 @@ import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const Particle = ({  }) => {
+const Wparticle = ({  }) => {
 
        const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
@@ -32,7 +32,7 @@ const Particle = ({  }) => {
                     "autoPlay": true,
                     "background": {
                       "color": {
-                        "value": "#000"
+                        "value": ""
                       },
                       "image": "",
                       "position": "",
@@ -48,15 +48,15 @@ const Particle = ({  }) => {
                         },
                         "opacity": 1
                       },
-                      "enable": true
+                      "enable": false
                     },
                     "defaultThemes": {},
                     "delay": 0,
                     "fullScreen": {
-                      "enable": true,
+                      "enable": false,
                       "zIndex": -1
                     },
-                    "detectRetina": false,
+                    "detectRetina": true,
                     "duration": 0,
                     "fpsLimit": 120,
                     "interactivity": {
@@ -73,8 +73,8 @@ const Particle = ({  }) => {
                           "type": "circle"
                         },
                         "onHover": {
-                          "enable": true,
-                          "mode": "grab",
+                          "enable": false,
+                          "mode": "trail",
                           "parallax": {
                             "enable": false,
                             "force": 2,
@@ -259,16 +259,16 @@ const Particle = ({  }) => {
                         }
                       },
                       "color": {
-                        "value": "#000000",
+                        "value": "#ffffff",
                         "animation": {
                           "h": {
                             "count": 0,
-                            "enable": false,
+                            "enable": true,
                             "offset": 0,
-                            "speed": 1,
+                            "speed": 50,
                             "delay": 0,
                             "decay": 0,
-                            "sync": true
+                            "sync": false
                           },
                           "s": {
                             "count": 0,
@@ -428,12 +428,11 @@ const Particle = ({  }) => {
                         }
                       },
                       "stroke": {
-                        "width": 0,
-                        "opacity": 1
+                        "width": 0
                       },
                       "zIndex": {
                         "random": {
-                          "enable": true,
+                          "enable": false,
                           "minimumValue": 0
                         },
                         "value": 0,
@@ -606,8 +605,8 @@ const Particle = ({  }) => {
                         "speed": 1
                       }
                     },
-                    "pauseOnBlur": false,
-                    "pauseOnOutsideViewport": false,
+                    "pauseOnBlur": true,
+                    "pauseOnOutsideViewport": true,
                     "responsive": [],
                     "smooth": false,
                     "style": {},
@@ -628,4 +627,4 @@ const Particle = ({  }) => {
 
 };
 
-export default Particle;
+export default Wparticle;
